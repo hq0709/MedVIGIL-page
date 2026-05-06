@@ -1,6 +1,6 @@
 # MedVIGIL — Project Page
 
-Static project landing page for the MedVIGIL benchmark (NeurIPS 2026 D&B Track submission).
+Static project landing page for the MedVIGIL benchmark (preprint, under review).
 
 **Live site:** https://hq0709.github.io/MedVIGIL-page
 
