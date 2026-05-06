@@ -373,7 +373,7 @@
     <p>For each pilot case we progressively replace the doctor-defined ROI with mid-grey at four steps (full / 33% / 67% / 100% masked) and watch how each flagship model's modal letter changes. A <em>grounded</em> model picks the doctor-defined refusal option (E) more often as the ROI is destroyed; an <em>ungrounded</em> model commits to the same non-refusal letter regardless. The bold serif letters above each marker are the model's modal answer on the example case (MVB-0031): Gemini 3 Flash picks <strong>B</strong> at every single step, even with 100% of the answer-relevant pixels removed — the smoking-gun failure mode.</p>
     <figure class="figure">
       <img src="static/images/fig_visual_token_ablation.png" alt="Visual-token ablation: progressive ROI mask vs. answer trajectory">
-      <figcaption>Left: 2×2 thumbnails of one example case at four ROI-mask steps (blue = ROI; red = portion masked). Right top: refusal rate (% picking option E) climbs 0→54% for both Claude Opus and GPT-5.5 but only 0→31% for Gemini 3 Flash. Right bottom: letter-switch rate vs. step 0. Pilot n=13 stratified cases, three flagship API models, five self-consistency samples per cell.</figcaption>
+      <figcaption>Left: 2×2 thumbnails of one example case at four ROI-mask steps (blue = ROI; red = portion masked). Right top: refusal rate (% picking option E) climbs to 58.8% for GPT-5.5 [Wilson 95% CI 47.9–68.9] and 57.5% for Claude Opus 4.7 [46.6–67.7], but only 42.5% for Gemini 3 Flash [32.2–53.4]. Right bottom: letter-switch rate vs. step 0; shaded bands are Wilson 95% CIs. Pilot <em>n</em>=80 stratified cases (16 per CRT tier), three flagship API models, five self-consistency samples per cell.</figcaption>
     </figure>
   </div>
 </section>
